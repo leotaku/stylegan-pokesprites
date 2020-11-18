@@ -12,5 +12,5 @@ let
   };
 in mach-nix.mkPythonShell {
   requirements = builtins.readFile ./requirements.txt;
-  packagesExtra = with pkgs; [ wget nodejs_latest ];
+  packagesExtra = with pkgs; [ wget nodejs_latest imagemagick7 ];
 }
